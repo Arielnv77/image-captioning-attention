@@ -1,4 +1,4 @@
-Image Captioning with Visual Attention
+🌁 Image Captioning with Visual Attention
 
 (or: why the model sees “a man in a red” everywhere)
 
