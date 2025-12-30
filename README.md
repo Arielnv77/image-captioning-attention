@@ -1,8 +1,8 @@
-🌁  Image Captioning with Visual Attention
+ # 🌁  Image Captioning with Visual Attention
 
 (or: why the model sees “a man in a red” everywhere)
 
-📌 Project overview
+# 📌 Project overview
 
 This project explores Image Captioning, a task that combines Computer Vision and Natural Language Processing to generate textual descriptions from images.
 
@@ -13,7 +13,7 @@ The goal of the project is not to achieve state-of-the-art results, but to:
 
 The final model works… but often poorly — and that is precisely the most interesting part of the project.
 
-🧠 Motivation
+# 🧠 Motivation
 
 Image Captioning looks deceptively simple:
 
@@ -27,7 +27,7 @@ This project was designed to experience those limitations first-hand by training
 	•	simple recurrent decoder
 
 
-🧩 Architecture
+# 🧩 Architecture
 
 The model follows a classic Encoder–Decoder with Attention architecture:
 
@@ -47,7 +47,7 @@ The model follows a classic Encoder–Decoder with Attention architecture:
 	•	Uses teacher forcing during training
 
 
-📂 Dataset
+# 📂 Dataset
 	•	Based on Flickr8k
 	•	A small subset (~800 images) was intentionally used
 	•	Each image has multiple human-written captions
@@ -57,14 +57,14 @@ The model follows a classic Encoder–Decoder with Attention architecture:
 	•	limitations of language modeling with few examples
 
 
-⚙️ Training setup
+# ⚙️ Training setup
 	•	Framework: PyTorch
 	•	Loss: Cross-Entropy (padding ignored)
 	•	Optimizer: Adam
 	•	Training epochs: 3
 	•	Hardware: CPU only
 
-Training loss evolution:
+# Training loss evolution:
         Epoch 1 → Loss: 5.75
         Epoch 2 → Loss: 4.91
         Epoch 3 → Loss: 4.57
@@ -101,7 +101,7 @@ When the model is uncertain, it defaults to the most probable sentence fragments
 This project clearly demonstrates how data limitations dominate architectural choices in generative models.
 
 
-🎯 Conclusions
+# 🎯 Conclusions
 
 This project shows that:
 	•	Image Captioning is significantly harder than it appears
