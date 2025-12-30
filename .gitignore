@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Virtual environments
+venv/
+.env/
+
+# Cache
+.cache/
+
+# Data (optional, uncomment if too heavy)
+# data/images_subset/
+# data/images.zip
+
+# Models / artifacts (optional)
+# *.pth
